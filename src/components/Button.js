@@ -7,7 +7,7 @@ background:transparent;
 border:0.05rem solid var(--darkGreen);
 border-color: ${props => 
 props.cart?'var(--mainGreen)':'var(--darkGreen)'};
-color: ${prop => prop.cart? 'var(--mainGreen)':'var(--darkGreen)'};
+color: ${prop => prop.cart? 'var(--darkGreen)':'var(--darkGreen)'};
 border-radius: 0.5rem;
 padding: 0.2rem 0.5rem;
 cursor: pointer;

@@ -64,7 +64,7 @@ const ProductWrapper = styled.div`
 .card-footer{
     background:transparent;
     transition: all 1s linear;
-    height: 5rem;
+    height: 7rem;
    
 }
 &:hover{

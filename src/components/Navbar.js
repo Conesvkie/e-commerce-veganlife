@@ -10,21 +10,25 @@ import {ButtonContainer} from './Button';
 export default class Navbar extends Component {
     render() {
         return (
-            <NavWrapper className='navbar navbar-expand-sm navbar-dark justify-content-between px-sm-5'>
+            <NavWrapper className='navbar navbar-expand justify-content-center px-1'>
                <Link to='/aboutus'>
                 <img src={logo} alt="store" className='navbar-brand' height='50rem'/>
                </Link>
+               
                <ul className='navbar-nav align-items-center'>
-                    <li className='nav-item ml-5'>
+                    <li className='nav-item mx-1 mx-sm-4'>
                         <Link to='/aboutus' className='nav-link'>
                             About Us
                         </Link>
+                    </li>
+                    <li className='nav-item mx-1 mx-sm-4'>
                         <Link to='/' className='nav-link'>
                             Products
                         </Link>
                     </li>
                </ul>
-               <Link to='/cart' className='ml-auto'>
+               
+               <Link to='/cart' className='ml-auto px-3'>
                    <ButtonContainer>
                    <span className='me-2'>
                        <i className='fas fa-cart-plus'/> My Cart
@@ -32,6 +36,7 @@ export default class Navbar extends Component {
                        
                    </ButtonContainer>
                </Link>
+               
             </NavWrapper>
         )
     }
